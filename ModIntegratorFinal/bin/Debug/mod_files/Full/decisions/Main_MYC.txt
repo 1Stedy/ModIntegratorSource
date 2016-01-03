@@ -1,0 +1,104 @@
+political_decisions = {
+
+	des_0 = {
+
+		alert = no
+
+		potential = {
+			NOT = { has_country_flag = where_to_move_capital }
+			NOT = { has_country_flag = capital_events }
+			NOT = { has_country_flag = capital_events_over }
+			NoT = { has_country_flag = capital_moved }
+			any_owned_province = {
+				is_capital = no
+				is_colonial = no
+			}
+				
+		}
+
+		allow = {
+			war = no
+			money = 1000000
+		}
+	
+		effect = {
+			set_country_flag = where_to_move_capital
+			set_variable = { 
+				which = speed
+				value = -1
+			}
+			set_variable = { 
+				which = ep
+				value = -1
+			}
+			set_variable = { 
+				which = reparations
+				value = -1
+			}
+			#treasury = -1000000
+			#prestige = -100
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	#to another continent
+	#des_1 = {
+	#	
+	#	alert = yes
+	#	
+	#	potential = {
+	#		NOT = { has_country_flag = moving_capital }
+	#		colonial_nation = yes
+	#		lost_national = 0.9
+	#		capital_scope = {
+	#			any_neighbor_province = {
+	#				NOT = { owned_by = THIS }
+	#			}
+	#		}
+	#	}
+	#
+	#	allow = {
+	#		war = no
+	#	}
+	#
+	#	effect = {
+	#		set_country_flag = moving_capital_overseas
+	#		set_country_flag = event_capital_overseas_over
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 0
+	#	}
+	#}
+	des_cancel = {
+
+		alert = no
+
+		potential = {
+			OR = {
+				has_country_flag = where_to_move_capital
+				has_country_flag = capital_events
+				has_country_flag = capital_events_over
+			}
+				
+		}
+
+		allow = {
+		}
+	
+		effect = {
+			clr_country_flag = where_to_move_capital
+			clr_country_flag = capital_events
+			clr_country_flag = capital_events_over
+			treasury = 500000
+			prestige = -10
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+		
+}

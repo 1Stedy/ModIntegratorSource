@@ -1,0 +1,82 @@
+##############Move Your Capital Mod###############
+
+malus_modifier_1 = {
+	local_factory_output = -0.05
+	local_RGO_output = -0.05
+	icon = 14
+}
+	
+malus_modifier_2 = {
+	local_factory_output = -0.1
+	local_RGO_output = -0.1
+	icon = 14
+}
+
+malus_modifier_3 = {
+	local_factory_output = -0.15
+	local_RGO_output = -0.15
+	icon = 14
+}
+
+migration_old_1 = {
+	rich_income_modifier = -0.05
+	middle_income_modifier = -0.1
+	poor_income_modifier = -0.15
+	immigrant_attract = -0.5
+	icon = 20
+}
+
+migration_old_2 = {
+	rich_income_modifier = -0.1
+	middle_income_modifier = -0.2
+	poor_income_modifier = -0.3
+	immigrant_attract = -1
+	icon = 20
+}
+
+migration_new_1 = {
+	rich_income_modifier = 0.15
+	middle_income_modifier = 0.25
+	poor_income_modifier = 0.35
+	immigrant_attract = 1
+	assimilation_rate = 0.15
+	immigrant_push = 0.5
+	icon = 19
+	local_ruling_party_support = 0.01
+}
+
+migration_new_2 = {
+	rich_income_modifier = -0.05
+	middle_income_modifier = -0.1
+	poor_income_modifier = -0.15
+	immigrant_attract = 0.1
+	assimilation_rate = -0.05
+	icon = 19
+	local_ruling_party_support = -0.01
+}
+
+migration_new_3 = {
+	rich_income_modifier = -10
+	middle_income_modifier = -0.25
+	poor_income_modifier = -0.25
+	immigrant_attract = -1.0
+	assimilation_rate = -1.0
+	icon = 18
+	local_ruling_party_support = -0.5
+	local_factory_output = -1.0
+	local_repair = -1.0
+	local_RGO_output = -1.0
+	local_ship_build = 1.0
+	population_growth = -0.1
+	
+}
+
+new_capital = {
+	icon = 7
+}
+
+listen_to_rabble = {
+	icon = 20
+	prestige = -0.1
+}
+##############Move Your Capital Mod End###############

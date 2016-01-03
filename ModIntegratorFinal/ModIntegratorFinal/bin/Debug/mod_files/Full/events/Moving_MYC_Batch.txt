@@ -1,0 +1,24 @@
+country_event = {
+	id = 627$id$
+	title = "627$id$_T"
+	desc = "627$id$_D"
+	picture = "capital_moved_myc"
+	
+	trigger = {
+		has_country_flag = capital_events_over
+		$province$ = {
+			has_province_modifier = new_capital
+		}
+	}
+	immediate = { capital = $province$ }
+	
+	option = {
+		name = "627$id$_OP1"
+		fprovincef = {
+			remove_province_modifier = new_capital
+		}
+		clr_country_flag = capital_events_over
+		set_country_flag = capital_moved
+		country_event = 6270000
+	}
+}

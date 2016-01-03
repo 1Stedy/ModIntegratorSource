@@ -1,0 +1,394 @@
+#############New capital events#############
+#Eviction from center
+#if speed 3 result -1
+#If speed 2 result +1
+#If speed 1 result 0
+#money result = ep^2
+#1
+country_event = {
+	id = 627011
+	title = "627011_T"
+	desc = "627011_D"
+	picture = "the_end_myc"
+
+	trigger = {
+		has_country_flag = capital_moved
+		check_variable = {
+			which = ep
+			value = 2.9
+		}
+		check_variable = {
+			which = speed
+			value = 1.9
+		}
+		NOT = { check_variable = {
+			which = speed
+			value = 3
+		}}
+	}
+	
+	option = {
+		name = "627011_OP1"
+		treasury = -500000
+		capital_scope = {
+			any_pop = {
+				money = 50
+				reduce_pop = 1.2
+				consciousness = 1.5
+			}
+			life_rating = 5
+			infrastructure = 2
+			add_province_modifier = {
+				name = migration_new_1
+				duration = 730
+			}
+		}
+		clr_country_flag = capital_moved
+		prestige = 100
+	}
+}
+#2
+country_event = {
+	id = 627012
+	title = "627012_T"
+	desc = "627012_D"
+	picture = "the_end_myc"
+
+	trigger = {
+		has_country_flag = capital_moved
+		OR = {
+			AND = {
+				check_variable = {
+					which = ep
+					value = 1.9
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 3
+				}}
+				check_variable = {
+					which = speed
+					value = 1.9
+				}
+				NOT = {
+				check_variable = {
+					which = speed
+					value = 3
+				}}
+			}
+		
+			AND = {	
+				check_variable = {
+					which = speed
+					value = 0.9
+				}
+				NOT = { check_variable = {
+					which = speed
+					value = 2
+				}}
+				check_variable = {
+					which = ep
+					value = 2.9
+				}
+			}
+		}
+			
+	}
+
+	option = {
+		name = "627012_OP1"
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				money = 30
+				reduce_pop = 1.15
+				consciousness = 1
+			}
+			life_rating = 3
+			infrastructure = 1
+
+			add_province_modifier = {
+				name = migration_new_1
+				duration = 365
+			}
+		}
+		clr_country_flag = capital_moved
+		prestige = 50
+	}
+}
+#3
+country_event = {
+	id = 627013
+	title = "627013_T"
+	desc = "627013_D"
+	picture = "the_end_myc"
+
+	trigger = {
+		has_country_flag = capital_moved
+		OR = {
+			AND = {
+				check_variable = {
+					which = ep
+					value = 0.9
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 2
+				}}
+				check_variable = {
+					which = speed
+					value = 1.9
+				}
+				NOT = {
+				check_variable = {
+					which = speed
+					value = 3
+				}}
+			}
+			AND = {
+				check_variable = {
+					which = ep
+					value = 1.9
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 3
+				}}
+				check_variable = {
+					which = speed
+					value = -.9
+				}
+				NOT = {
+				check_variable = {
+					which = speed
+					value = 2
+				}}
+			}
+			AND = {
+				check_variable = {
+					which = ep
+					value = 2.9
+				}
+				check_variable = {
+					which = speed
+					value = 2.9
+				}
+			}
+		}	
+	}
+
+	option = {
+		name = "627013_OP1"
+		treasury = -100000
+		capital_scope = {
+			any_pop = {
+				money = 10
+				reduce_pop = 1.1
+				consciousness = 0.5
+			}
+			life_rating = 1
+			add_province_modifier = {
+				name = migration_new_1
+				duration = 183
+			}
+		}
+		clr_country_flag = capital_moved
+		prestige = 10
+	}
+}
+#4
+country_event = {
+	id = 627014
+	title = "627014_T"
+	desc = "627014_D"
+	picture = "the_end_myc"
+
+	trigger = {
+		has_country_flag = capital_moved
+		OR = {
+			AND = {
+				check_variable = {
+					which = ep
+					value = -0.1
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 1
+				}}
+				check_variable = {
+					which = speed
+					value = 0.9
+				}
+				NOT = {
+				check_variable = {
+					which = speed
+					value = 2
+				}}
+			}
+			AND = {
+				check_variable = {
+					which = ep
+					value = 0.9
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 2
+				}}
+				check_variable = {
+					which = speed
+					value = 0.9
+				}
+				NOT = {
+				check_variable = {
+					which = speed
+					value = 2
+				}}
+			}
+			AND = {
+				check_variable = {
+					which = ep
+					value = 1.9
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 3
+				}}
+				check_variable = {
+					which = speed
+					value = 2.9
+				}
+			}
+		}	
+	}
+
+	option = {
+		name = "627014_OP1"
+		treasury = -400000
+		capital_scope = {
+			any_pop = {
+				reduce_pop = 1.05
+			}
+			add_province_modifier = {
+				name = migration_new_1
+				duration = 93
+			}
+		}
+		clr_country_flag = capital_moved
+	}
+}
+#5
+country_event = {
+	id = 627015
+	title = "627015_T"
+	desc = "627015_D"
+	picture = "the_end_myc"
+
+	trigger = {
+		has_country_flag = capital_moved
+		OR = {
+			AND = {
+				check_variable = {
+					which = ep
+					value = -0.1
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 1
+				}}
+				check_variable = {
+					which = speed
+					value = 0.9
+				}
+				NOT = {
+				check_variable = {
+					which = speed
+					value = 2
+				}}
+			}
+			AND = {
+				check_variable = {
+					which = ep
+					value = 0.9
+				}
+				NOT = {
+				check_variable = {
+					which = ep
+					value = 2
+				}}
+				check_variable = {
+					which = speed
+					value = 2.9
+				}
+			}
+		}	
+	}
+
+	option = {
+		name = "627015_OP1"
+		treasury = -200000
+		capital_scope = {
+			any_pop = {
+				money = -10
+				reduce_pop = 0.95
+				militancy = 1
+			}
+			life_rating = -1
+			add_province_modifier = {
+				name = migration_new_2
+				duration = 183
+			}
+		}
+		clr_country_flag = capital_moved
+		prestige = -10
+	}
+}
+#6
+country_event = {
+	id = 627016
+	title = "627016_T"
+	desc = "627016_D"
+	picture = "the_bad_end_myc"
+
+	trigger = {
+		has_country_flag = capital_moved
+		check_variable = {
+			which = ep
+			value = -0.1
+		}
+		NOT = { check_variable = {
+				which = ep
+				value = 1
+		}}
+		check_variable = {
+			which = speed
+			value = 2.9
+		}
+	}
+
+	option = {
+		name = "627016_OP1"
+		treasury = -100000
+		capital_scope = {
+			any_pop = {
+				money = -30
+				reduce_pop = 0.85
+				militancy = 10
+			}
+			life_rating = -3
+			infrastructure = -1
+			add_province_modifier = {
+				name = migration_new_3
+				duration = 365
+			}
+		}
+		clr_country_flag = capital_moved
+		prestige = -20
+	}
+}

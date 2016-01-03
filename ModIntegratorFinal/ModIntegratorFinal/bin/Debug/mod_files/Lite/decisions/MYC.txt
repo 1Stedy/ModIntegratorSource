@@ -1,0 +1,25 @@
+political_decisions = {
+
+	des_0 = {
+
+		alert = no
+
+		potential = {
+			NOT = { has_country_flag = moving_capital }
+		}
+
+		allow = {
+			war = no
+			money = 1000000
+		}
+	
+		effect = {
+			set_country_flag = moving_capital
+			set_country_flag = event_capital_over
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

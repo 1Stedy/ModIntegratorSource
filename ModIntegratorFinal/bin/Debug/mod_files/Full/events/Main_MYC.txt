@@ -1,0 +1,1114 @@
+#############Moving of the capital events#############
+
+#Speed
+#Var 1
+country_event = {
+	id = 62700101
+	title = "627001_T"
+	desc = "627001_D"
+	picture = "gossip_myc"
+	
+	trigger = {
+		has_country_flag = capital_events
+		NOT = {check_variable = {
+			which = speed
+			value = 0
+		}}
+		NOT = { ruling_party_ideology = reactionary }
+		press_rights = censored_press
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "627001_OP1"
+		#Fast
+		treasury = -100000
+		#THIS = { limit = { NOT = { party_ideology = reactionary } }
+		capital_scope = {
+			any_pop = {
+				militancy = 2
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 3
+		}
+	}
+	option = {
+		name = "627001_OP2"
+		#Middle
+		set_variable = { 
+			which = speed
+			value = 2
+		}
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.5
+				}
+			}
+			rich_strata = {
+				dominant_issue = {
+					value = state_press
+					factor = 0.25
+				}
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = listen_to_rabble
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = "627001_OP3"
+		#Slow
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				consciousness = 2
+			}
+		}
+		press_rights = state_press
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 1
+		}
+	}
+}
+
+#Speed
+#Var 2
+country_event = {
+	id = 62700102
+	title = "627001_T"
+	desc = "627001_D"
+	picture = "gossip_myc"
+	
+	trigger = {
+		has_country_flag = capital_events
+		NOT = {check_variable = {
+			which = speed
+			value = 0
+		}}
+		NOT = { ruling_party_ideology = reactionary }
+		press_rights = state_press
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "627001_OP1"
+		#Fast
+		treasury = -100000
+		#THIS = { limit = { NOT = { party_ideology = reactionary } }
+		capital_scope = {
+			any_pop = {
+				militancy = 2
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 3
+		}
+	}
+	option = {
+		name = "627001_OP2"
+		#Middle
+		set_variable = { 
+			which = speed
+			value = 2
+		}
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = listen_to_rabble
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = "627001_OP3"
+		#Slow
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				consciousness = 2
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 1
+		}
+	}
+}
+
+#Speed
+#Var 3
+country_event = {
+	id = 62700103
+	title = "627001_T"
+	desc = "627001_D"
+	picture = "gossip_myc"
+	
+	trigger = {
+		has_country_flag = capital_events
+		NOT = {check_variable = {
+			which = speed
+			value = 0
+		}}
+		ruling_party_ideology = reactionary
+		press_rights = censored_press
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "627001_OP1"
+		#Fast
+		treasury = -100000
+		#THIS = { limit = { NOT = { party_ideology = reactionary } }
+		capital_scope = {
+			any_pop = {
+				militancy = 2
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 3
+		}
+	}
+	option = {
+		name = "627001_OP2"
+		#Middle
+		set_variable = { 
+			which = speed
+			value = 2
+		}
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.5
+				}
+			}
+			rich_strata = {
+				dominant_issue = {
+					value = state_press
+					factor = 0.25
+				}
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = listen_to_rabble
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = "627001_OP3"
+		#Slow
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				consciousness = 2
+			}
+		}
+		press_rights = state_press
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 1
+		}
+	}
+}
+
+#Speed
+#Var 4
+country_event = {
+	id = 62700104
+	title = "627001_T"
+	desc = "627001_D"
+	picture = "gossip_myc"
+	
+	trigger = {
+		has_country_flag = capital_events
+		NOT = {check_variable = {
+			which = speed
+			value = 0
+		}}
+		ruling_party_ideology = reactionary
+		press_rights = state_press
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "627001_OP1"
+		#Fast
+		treasury = -100000
+		#THIS = { limit = { NOT = { party_ideology = reactionary } }
+		capital_scope = {
+			any_pop = {
+				militancy = 2
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 3
+		}
+	}
+	option = {
+		name = "627001_OP2"
+		#Middle
+		set_variable = { 
+			which = speed
+			value = 2
+		}
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = censored_press
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = listen_to_rabble
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = "627001_OP3"
+		#Slow
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				consciousness = 2
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 1
+		}
+	}
+}
+
+#Speed
+#Var 5
+country_event = {
+	id = 62700105
+	title = "627001_T"
+	desc = "627001_D"
+	picture = "gossip_myc"
+	
+	trigger = {
+		has_country_flag = capital_events
+		NOT = {check_variable = {
+			which = speed
+			value = 0
+		}}
+		NOT = { ruling_party_ideology = reactionary }
+		press_rights = free_press
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "627001_OP1"
+		#Fast
+		treasury = -100000
+		#THIS = { limit = { NOT = { party_ideology = reactionary } }
+		capital_scope = {
+			any_pop = {
+				militancy = 2
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 3
+		}
+	}
+	option = {
+		name = "627001_OP2"
+		#Middle
+		set_variable = { 
+			which = speed
+			value = 2
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = reactionary
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = listen_to_rabble
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = "627001_OP3"
+		#Slow
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				consciousness = 2
+			}
+		}
+		press_rights = censored_press
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 1
+		}
+	}
+}
+
+#Speed
+#Var 6
+country_event = {
+	id = 62700106
+	title = "627001_T"
+	desc = "627001_D"
+	picture = "gossip_myc"
+	
+	trigger = {
+		has_country_flag = capital_events
+		NOT = {check_variable = {
+			which = speed
+			value = 0
+		}}
+		ruling_party_ideology = reactionary
+		press_rights = free_press
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+	
+	option = {
+		name = "627001_OP1"
+		#Fast
+		treasury = -100000
+		#THIS = { limit = { NOT = { party_ideology = reactionary } }
+		capital_scope = {
+			any_pop = {
+				militancy = 2
+			}
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 3
+		}
+	}
+	option = {
+		name = "627001_OP2"
+		#Middle
+		set_variable = { 
+			which = speed
+			value = 2
+		}
+		capital_scope = {
+			poor_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				ideology = {
+					value = anarcho_liberal
+					factor = 0.5
+				}
+			}
+		}
+		capital_scope = {
+			any_pop = {
+				militancy = 1
+				consciousness = 1
+			}
+		}
+		add_country_modifier = {
+			name = listen_to_rabble
+			duration = -1
+		}
+		
+	}
+
+	option = {
+		name = "627001_OP3"
+		#Slow
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				consciousness = 2
+			}
+		}
+		press_rights = censored_press
+		capital_scope = {
+			poor_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.75
+				}
+			}
+			middle_strata = {
+				dominant_issue = {
+					value = free_press
+					factor = 0.5
+				}
+			}
+		}
+		set_variable = { 
+			which = speed
+			value = 1
+		}
+	}
+}
+
+#Expanding project
+country_event = {
+	id = 627002
+	title = "627002_T"
+	desc = "627002_D"
+	picture = "project_myc"
+
+	trigger = {
+		has_country_flag = capital_events
+		NOT = { check_variable = {
+			which = ep
+			value = 0
+		}}
+		check_variable = {
+			which = speed
+			value = 0
+		}
+		war = no			
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = speed
+				value = 2.9
+			}
+		}
+		modifier = {
+			factor = 1.25
+			check_variable = {
+				which = speed
+				value = 0.9
+			}
+			NOT = { check_variable = {
+				which = speed
+				value = 2
+			}}
+		}
+	}
+
+	
+	option = {
+		name = "627002_OP1"
+		#Great
+		treasury = -1000000
+		treasury = -1000000
+		treasury = -1000000
+		prestige = 100
+		set_variable = { 
+			which = ep
+			value = 3
+		}
+	}
+	option = {
+		name = "627002_OP2"
+		#Good
+		treasury = -1000000
+		prestige = 50
+		set_variable = { 
+			which = ep
+			value = 2
+		}
+	}
+
+	option = {
+		name = "627002_OP3"
+		#Ok
+		prestige = 10
+		treasury = -100000
+		set_variable = { 
+			which = ep
+			value = 1
+		}
+	}
+
+	option = {
+		name = "627002_OP4"
+		#Bad
+		prestige = -10
+		set_variable = { 
+			which = ep
+			value = 0
+		}
+		remove_country_modifier = listen_to_rabble
+	}
+}
+
+#Reparations
+country_event = {
+	id = 627003
+	title = "627003_T"
+	desc = "627003_D"
+	picture = "reparations_myc"
+
+	trigger = {
+		has_country_flag = capital_events
+		NOT = { check_variable = {
+			which = reparations
+			value = 0
+		}}
+		check_variable = {
+			which = speed
+			value = 0
+		}
+		war = no		
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = speed
+				value = 2.9
+			}
+		}
+		modifier = {
+			factor = 1.25
+			check_variable = {
+				which = speed
+				value = 0.9
+			}
+			NOT = { check_variable = {
+				which = speed
+				value = 2
+			}}
+		}
+	}
+
+	
+	option = {
+		name = "627003_OP1"
+		#Good
+		treasury = -300000
+		capital_scope = {
+			any_pop = {
+				money = 30
+			}
+			add_province_modifier = {
+				name = malus_modifier_1
+				duration = 730
+			}
+		}
+		set_variable = { 
+			which = reparations
+			value = 3
+		}
+	}
+	option = {
+		name = "627003_OP2"
+		#Not bad
+		treasury = -100000
+		capital_scope = {
+			any_pop = {
+				money = 10
+			}
+			add_province_modifier = {
+				name = malus_modifier_2
+				duration = 730
+			}
+		}
+		set_variable = { 
+			which = reparations
+			value = 2
+		}
+	}
+
+	option = {
+		name = "627003_OP3"
+		#Bad
+		capital_scope = {
+			any_pop = {
+				money = -10
+			}
+			add_province_modifier = {
+				name = malus_modifier_3
+				duration = 730
+			}
+		}
+		set_variable = { 
+			which = reparations
+			value = 1
+		}
+		remove_country_modifier = listen_to_rabble
+	}
+}
+
+#############Life rating events#############
+#Old capital
+country_event = {
+	id = 627004
+	title = "627004_T"
+	desc = "627004_D"
+	picture = "events_over_myc"
+
+	trigger = {
+		has_country_flag = capital_events
+			check_variable = {
+				which = reparations
+				value = 2.9
+			}
+			check_variable = {
+				which = speed
+				value = 0
+			}
+			check_variable = {
+				which = ep
+				value = -0.1
+			}
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 9
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = speed
+				value = 2.9
+			}
+		}
+		modifier = {
+			factor = 1.25
+			check_variable = {
+				which = speed
+				value = 0.9
+			}
+			NOT = { check_variable = {
+				which = speed
+				value = 2
+			}}
+		}
+	}
+
+	
+	option = {
+		name = "627004_OP1"
+		set_country_flag = capital_events_over
+		clr_country_flag = capital_events
+	}
+}
+
+
+country_event = {
+	id = 627005
+	title = "627005_T"
+	desc = "627005_D"
+	picture = "events_over_myc"
+
+	trigger = {
+		has_country_flag = capital_events
+			check_variable = {
+				which = reparations
+				value = 1.9
+			}
+			NOT = {
+			check_variable = {
+				which = reparations
+				value = 3
+			}}
+			check_variable = {
+				which = speed
+				value = 0
+			}
+			check_variable = {
+				which = ep
+				value = -0.1
+			}
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 9
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = speed
+				value = 2.9
+			}
+		}
+		modifier = {
+			factor = 1.25
+			check_variable = {
+				which = speed
+				value = 0.9
+			}
+			NOT = { check_variable = {
+				which = speed
+				value = 2
+			}}
+		}
+	}
+
+	option = {
+		name = "627005_OP1"
+		capital_scope = {		
+			life_rating = -2
+			add_province_modifier = {
+				name = migration_old_1
+				duration = 365
+			}
+		}
+		set_country_flag = capital_events_over
+		clr_country_flag = capital_events
+	}
+}
+
+country_event = {
+	id = 627006
+	title = "627006_T"
+	desc = "627006_D"
+	picture = "events_over_myc"
+
+	trigger = {
+		has_country_flag = capital_events
+			check_variable = {
+				which = reparations
+				value = 0.9
+			}
+			NOT = {
+			check_variable = {
+				which = reparations
+				value = 2
+			}}
+			check_variable = {
+				which = speed
+				value = 0
+			}
+			check_variable = {
+				which = ep
+				value = -0.1
+			}
+		war = no
+	}
+
+	mean_time_to_happen = {
+		months = 9
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = speed
+				value = 2.9
+			}
+		}
+		modifier = {
+			factor = 1.25
+			check_variable = {
+				which = speed
+				value = 0.9
+			}
+			NOT = { check_variable = {
+				which = speed
+				value = 2
+			}}
+		}
+	}
+
+	option = {
+		name = "627006_OP1"
+		capital_scope = {		
+			life_rating = -3
+			add_province_modifier = {
+				name = migration_old_2
+				duration = 365
+			}
+		}
+		set_country_flag = capital_events_over
+		clr_country_flag = capital_events
+	}
+}

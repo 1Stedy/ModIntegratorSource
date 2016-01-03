@@ -1,0 +1,10 @@
+malus_modifier_1;Production decay;x
+malus_modifier_2;Production decay;x
+malus_modifier_3;Production decay;x
+migration_old_1;Emigration;x
+migration_old_2;Emigration;x
+migration_new_1;Immigration;x
+migration_new_2;Immigration;x
+migration_new_3;Industrial action;x
+new_capital;New capital;x
+listen_to_rabble;We are listen to rabble!;x

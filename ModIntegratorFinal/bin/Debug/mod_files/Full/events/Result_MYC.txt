@@ -1,0 +1,19 @@
+country_event = {
+	id = 6270000
+	title = "6270000_T"
+	desc = "6270000_D"
+
+	news = yes
+	news_desc_long = "6270000_NEWS_LONG"
+	news_desc_medium = "6270000_NEWS_MEDIUM"
+	news_desc_short = "6270000_NEWS_SHORT"
+	
+	major = yes
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "6270000_OP1"
+		remove_country_modifier = listen_to_rabble
+	}
+}

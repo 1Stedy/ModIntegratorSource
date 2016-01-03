@@ -1,0 +1,35 @@
+	des_cap_$id$ = {
+		alert = yes
+		potential = {
+			has_country_flag = where_to_move_capital
+			$province$ = {
+				units_in_province = 1
+				NOT = { units_in_province = 2}
+			owned_by = THIS
+			}
+		}
+		allow = {
+			war = no
+			$province$ = {
+				controlled_by = THIS
+				is_colonial = no
+				is_capital = no
+			}
+			is_core = $province$
+			capital_scope = {
+				continent = $continent$
+			}
+		} 
+		effect = {
+			set_country_flag = capital_events
+			clr_country_flag = where_to_move_capital
+			$province$ = {
+				add_province_modifier = {
+					name = new_capital duration = -1
+				}
+			}
+			treasury = -1000000
+			prestige = -100
+		}
+		ai_will_do = { factor = 0 }
+	}

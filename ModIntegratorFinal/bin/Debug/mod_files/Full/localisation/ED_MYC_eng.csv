@@ -1,0 +1,53 @@
+des_0_title;Think about change of the capital of our great country!;x
+des_0_desc;We can think about consider the idea of moving the capital of our great country! Just don't forget to send 1 regiment to the desired province.;x
+des_cancel_title;Cancel decision;x
+des_cancel_desc;We can cancel our decision about changing the capital.;x
+627001_T;People nervous!;x
+627001_D;Talks about the transfer of the capital at the speed of the bullets fly! In society there is concern about this. What should we do?;x
+627001_OP1;We should speed up the work, don't pay attaention on them;x
+627001_OP2;We should make a conference for this question;x
+627001_OP3;Print disproof in the newspapers, rabbels should'n know our plans;x
+627002_T;New capital project;x
+627002_D;Local and foreign architects, artists and sculptors will be involved in the project. What would you like to see?;x
+627002_OP1;I see great sculptures, gold statues, glorious palaces;x
+627002_OP2;I can clearly see bronze statues, beautiful theatres, museums;x
+627002_OP3;Place a statue and thats all;x
+627002_OP4;Buy wood and iron, we are not up to luxury;x
+627003_T;Reaprations;x
+627003_D;Enough time has passed, many demolition work carried out, much transported to the new location. Obviously, the people of the old capital could lose a significant portion of revenues, production will begin to experience difficulties,  many people will leave as a result will decrease living standards. A question matured about reparations to our citizens.;x
+627003_OP1;We'll not leave our citizens in trouble! Give all banknotes enough!;x
+627003_OP2;Distribute money by living wage!;x
+627003_OP3;Let these worms work and stop waiting for handouts!;x
+627004_T;Work is close to completion;x
+627004_D;It remains to sign some papers and carry the government to a new location. We have kept a decent standard of living in the old capital.;x
+627004_OP1;Great!;x
+627005_T;Work is close to completion;x
+627005_D;It remains to sign some papers and carry the government to a new location. It is regrettable that the standard of living for the residents of the old capital fell,  but it was inevitable.;x
+627005_OP1;Ok!;x
+627006_T;Work is close to completion;x
+627006_D;It remains to sign some papers and carry the government to a new location. Unfortunately, the old ca...;x
+627006_OP1;Leave me alone on information about this useless town!;x
+627011_T;New capital news;x
+627011_D;Infrastructure and the standard of living increased to unprecedented heights! But because of the rapid construction we were forced to evict people from the center, we should reimburse the damage and find them a new home in order not to spoil our reputationin the eyes of the international community.;x
+627011_OP1;Certainly we do our duty to the citizens;x
+627012_T;New capital news;x
+627012_D;Infrastructure and the standard of living increased! But because of the rapid construction we were forced to evict people from the center, we should reimburse the damage and find them a new home in order not to spoil our reputationin the eyes of the international community.;x
+627012_OP1;Certainly we do our duty to the citizens;x
+627013_T;New capital news;x
+627013_D;The standard of living has increased! But because of the construction we were forced to evict people from the center, we should reimburse the damage and find them a new home in order not to spoil our reputation in the eyes of the international community.;x
+627013_OP1;Certainly we do our duty to the citizens;x
+627014_T;New capital news;x
+627014_D;Unfortunately,  our policy of investment in the project has not led to any changes.;x
+627014_OP1;Ok;x
+627015_T;New capital news;x
+627015_D;Unfortunately, due to our policy of investment in the project standard of living has fallen slightly so people lose their savings, growing discontent.;x
+627015_OP1;There was no choice;x
+627016_T;New capital news;x
+627016_D;Unfortunately, due to our policy of investment in the project standard of living has dropped significantly so the people lose their savings, some mired in debt. The secret police had reported the impending uprising...;x
+627016_OP1;I think I heard the shots...;x
+6270000_T;New capital;x
+6270000_D;We, the government of the state $COUNTRY$, declare to the world that this day our new capital is $CAPITAL$!;x
+6270000_OP1;Ok;x
+6270000_NEWS_LONG;$COUNTRY$ moved its capital to $CAPITAL$. Local authorities in honor of this event staged a magnificent festival. World leaders congratulated the people of $COUTNRY$ with this significant event. Many high-up persons were present at the ceremony, including foreign representatives.;x
+6270000_NEWS_MEDIUM;$COUNTRY$m oved its capital to $CAPITAL$. Local authorities in honor of this event staged a celebration and accepted congratulations from world leaders.;x
+6270000_NEWS_SHORT;$COUNTRY$ moved its capital to $CAPITAL$.;x
